@@ -15,9 +15,9 @@ export const Contact = () => {
         </h3>
       </div>
       <div className="flex justify-between contact mt-7">
-        <div>
-          <h2>Get Started</h2>
-          <p>
+        <div className="p-9 ">
+          <h2 className="text-3xl text-center">Get Started</h2>
+          <p className="text-2xl">
             We Provide high class services at attractive prices. Please reach
             out to us via details given below or leave a query on the form
             given.
@@ -45,9 +45,7 @@ export const Contact = () => {
           </button>
         </form>
       </div>
-      <div>
-        
-      </div>
+      <div></div>
     </div>
   );
 };

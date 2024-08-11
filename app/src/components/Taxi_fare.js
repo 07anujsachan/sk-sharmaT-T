@@ -2,6 +2,12 @@ import React from "react";
 import { Header } from "./Header";
 
 export const Price = () => {
+    const sendMessage = () => {
+        const phoneNumber = '8219129088'; 
+        const message = encodeURIComponent(`Hello, I need more information about your car prices.`); // Customize your message
+        window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+      
+      }
   const taxis = [
     {
       image: ".//cars/alto.webp",
@@ -84,7 +90,7 @@ export const Price = () => {
                     <li className="list-disc mb-2">{f}</li>
                   ))}
                 </ul>
-                <button className="py-4 text-lg mt-6 px-8 bg-[#124e66] text-white rounded-xl font-semibold">
+                <button onClick={sendMessage} className="py-4 text-lg mt-6 px-8 bg-[#124e66] text-white rounded-xl font-semibold">
                   Get Prices
                 </button>
               </div>

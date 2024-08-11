@@ -2,6 +2,13 @@ import React from "react";
 import { Header } from "./Header";
 
 export const Tours = () => {
+
+        const sendMessage = () => {
+          const phoneNumber = '8219129088'; 
+          const message = encodeURIComponent('Hello, I need more information about this tour.'); // Customize your message
+          window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+        
+        }
   return (
     <>
       <Header />
@@ -40,7 +47,7 @@ export const Tours = () => {
                   ⁠North East India Tour (Darjeeling-Gangtok-Kalimpong)
                 </li>
               </ul>
-              <button className="more-info text-2xl font-semibold px-6 py-4 mt-8 ">
+              <button onClick={sendMessage}  className="more-info text-2xl font-semibold px-6 py-4 mt-8 ">
                 More Info
               </button>
             </div>
@@ -66,14 +73,14 @@ export const Tours = () => {
                   Hot Air Balloon in Manali
                 </li>
               </ul>
-              <button className="more-info text-2xl font-semibold px-6 py-4 mt-8 ">
+              <button onClick={sendMessage}  className="more-info text-2xl font-semibold px-6 py-4 mt-8 ">
                 More Info
               </button>
             </div>
           </div>
           <div className="flex my-20 ">
             <figure className="w-1/2">
-              <img className="h-full tour-img" src=".//activity.jpg" alt="#" />
+              <img className="h-full tour-img" src=".//pilgrimage.jpg" alt="#" />
             </figure>
             <div className="px-40 py-32 w-1/2 border-tour">
               <h3 className="text-4xl font-semibold my-4">Pilgrimage Tours</h3>
@@ -90,14 +97,14 @@ export const Tours = () => {
                   ⁠ ⁠Golden Temple Tour (Amritsar)
                 </li>
               </ul>
-              <button className="more-info text-2xl font-semibold px-6 py-4 mt-8 ">
+              <button onClick={sendMessage}  className="more-info text-2xl font-semibold px-6 py-4 mt-8 ">
                 More Info
               </button>
             </div>
           </div>
           <div className="flex my-20 ">
             <figure className="w-1/2">
-              <img className="h-full tour-img" src=".//activity.jpg" alt="#" />
+              <img className="h-full tour-img" src=".//luxry.jpeg" alt="#" />
             </figure>
             <div className="px-40 py-32 w-1/2 border-tour">
               <h3 className="text-4xl font-semibold my-4">Luxury Tours</h3>
@@ -116,7 +123,7 @@ export const Tours = () => {
                   ⁠Luxury Jammu & Kashmir Tour
                 </li>
               </ul>
-              <button className="more-info text-2xl font-semibold px-6 py-4 mt-8 ">
+              <button onClick={sendMessage}  className="more-info text-2xl font-semibold px-6 py-4 mt-8 ">
                 More Info
               </button>
             </div>

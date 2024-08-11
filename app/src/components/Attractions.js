@@ -556,6 +556,84 @@ export const Attractions = () => {
             </p>
           </div>
         </div>
+        <div className=" flex w-full mt-12 ">
+          <div className="py-24 pr-12 w-1/2">
+            <h3 className="text-5xl font-semibold text-[#124E66]">
+              {" "}
+              Golden Temple
+            </h3>
+            <p className="text-2xl my-4 text-gray-600 leading-snug">
+              The stadium served as the home ground for the Himachal Pradesh
+              cricket team for Ranji Trophy matches and other domestic matches.
+              The stadium also hosted some IPL matches as a home stadium for
+              Punjab Kings.[5] The picturesque venue is unique in India as it is
+              situated at an altitude of 1,457 m above sea level and has
+              snow-capped Himalayan mountains in the background. Getting to
+              Dharamsala from the nearby Kangra Airport, which is about 8
+              kilometres away through the hilly terrain and the harsh winters,
+              during which it rains and snows.
+            </p>
+          </div>
+          <figure className="w-1/2">
+            <img
+              className="w-full h-full rounded-md"
+              src=".//attractions/golden.jpg"
+              alt="#"
+            />
+          </figure>
+        </div>
+        <div className=" flex w-full mt-12">
+          <figure className="w-1/2">
+            <img
+              className="w-full h-full rounded-md"
+              src=".//attractions/dalhousie.jpg"
+              alt="#"
+            />
+          </figure>
+          <div className="py-24 pl-12 w-1/2">
+            <h3 className="text-5xl font-semibold text-[#124E66]">
+              {" "}
+              Khajjiyar
+            </h3>
+            <p className="text-2xl my-4 text-gray-600 leading-snug">
+              The stadium served as the home ground for the Himachal Pradesh
+              cricket team for Ranji Trophy matches and other domestic matches.
+              The stadium also hosted some IPL matches as a home stadium for
+              Punjab Kings.[5] The picturesque venue is unique in India as it is
+              situated at an altitude of 1,457 m above sea level and has
+              snow-capped Himalayan mountains in the background. Getting to
+              Dharamsala from the nearby Kangra Airport, which is about 8
+              kilometres away through the hilly terrain and the harsh winters,
+              during which it rains and snows.
+            </p>
+          </div>
+        </div>
+        <div className=" flex w-full mt-12 ">
+          <div className="py-24 pr-12 w-1/2">
+            <h3 className="text-5xl font-semibold text-[#124E66]">
+              {" "}
+              Shimla
+            </h3>
+            <p className="text-2xl my-4 text-gray-600 leading-snug">
+              The stadium served as the home ground for the Himachal Pradesh
+              cricket team for Ranji Trophy matches and other domestic matches.
+              The stadium also hosted some IPL matches as a home stadium for
+              Punjab Kings.[5] The picturesque venue is unique in India as it is
+              situated at an altitude of 1,457 m above sea level and has
+              snow-capped Himalayan mountains in the background. Getting to
+              Dharamsala from the nearby Kangra Airport, which is about 8
+              kilometres away through the hilly terrain and the harsh winters,
+              during which it rains and snows.
+            </p>
+          </div>
+          <figure className="w-1/2">
+            <img
+              className="w-full h-full rounded-md"
+              src=".//attractions/shimla-photo.jpeg"
+              alt="#"
+            />
+          </figure>
+        </div>
       </div>
     </div>
   );

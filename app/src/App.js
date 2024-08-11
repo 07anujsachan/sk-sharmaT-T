@@ -2,7 +2,7 @@ import { About } from "./components/About";
 import { Attractions } from "./components/Attractions";
 import { Hero } from "./components/Hero";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { ScrollToTop } from "./components/Scrolltop";
 import { Tours } from "./components/Tours";
 import { Footer } from "./components/Footer";
 import { FloatingActionButton } from "./components/Floating";
@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/about" element={<About />} />

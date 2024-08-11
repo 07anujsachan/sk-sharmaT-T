@@ -16,7 +16,7 @@ export const About = () => {
         <div className="flex justify-center items-center flex-col">
           <p className="text-2xl my-4">
             "Welcome to SK Sharma Tour & Travel Agency, your trusted partner for
-            exploring the beauty of India. Established in 2000 in the
+            exploring the beauty of India. Established in 2017 in the
             picturesque town of Dharamshala, Himachal Pradesh, we have been
             curating unforgettable travel experiences for over two decades.
           </p>

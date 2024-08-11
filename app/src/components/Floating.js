@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faRocketchat, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
+import { faCircleXmark } from "@fortawesome/free-regular-svg-icons";
 export const FloatingActionButton = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -19,10 +20,16 @@ export const FloatingActionButton = () => {
   return (
     <div className="fixed bottom-6 right-6 flex flex-col items-end">
       <button
-        className="bg-blue-500 text-white p-9 mb-1 text-2xl rounded-full shadow-lg focus:outline-none"
+        className={`bg-blue-500 text-white p-9 mb-1 text-2xl rounded-full shadow-lg focus:outline-none ${
+          isOpen ? "rotate-90 bg-red-500" : ""
+        } `}
         onClick={handleToggle}
       >
-        <FontAwesomeIcon className="text-4xl" icon={faRocketchat} />
+        {isOpen ? (
+          <FontAwesomeIcon className="text-4xl" icon={faCircleXmark} />
+        ) : (
+          <FontAwesomeIcon className="text-4xl" icon={faRocketchat} />
+        )}
       </button>
 
       {isOpen && (

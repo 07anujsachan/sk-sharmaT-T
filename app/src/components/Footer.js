@@ -50,7 +50,7 @@ export const Footer = () => {
         </div>
       </footer>
       <div className="p-24 bg-black">
-        <p className="text-3xl">
+        <p className="text-3xl text-gray-300">
           &copy: S K Sharma Tour & Travels All Right Reserved @2024
         </p>
       </div>
