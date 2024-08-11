@@ -141,7 +141,7 @@ export const Hero = () => {
         </div>
       </div>
       <div className="bg-slate-200">
-        <h3 className="pt-8 font-semibold text-center text-5xl text-[#124E66]">
+        <h3 className="pt-8 font-semibold text-center lg:text-5xl md:text-3xl text-2xl  text-[#124E66]">
           7 Years of Following The Dream
         </h3>
         <div className="mx-auto items-center flex justify-between md:px-52 lg:px-96 px-20  py-20 bg-slate-200">
@@ -387,11 +387,11 @@ export const Hero = () => {
           Hot Tours
         </h3>
         <div>
-          <div className="flex my-20  ">
-            <figure className="w-1/2 ">
+          <div className="flex flex-col md:flex-row my-20  ">
+            <figure className="md:w-1/2 w-full ">
               <img className="h-full tour-img" src=".//domestic.webp" alt="#" />
             </figure>
-            <div className="px-40 py-32 w-1/2 border-tour ">
+            <div className="md:px-40 md:py-32 p-10 md:w-1/2 w-full border-tour ">
               <h3 className="text-4xl font-semibold my-4">Domestic Tours</h3>
               <ul className="w-full ml-4">
                 <li className="list-disc mt-2  text-xl ">
@@ -420,11 +420,11 @@ export const Hero = () => {
               </Link>
             </div>
           </div>
-          <div className="flex my-20 ">
-            <figure className="w-1/2">
+          <div className="flex flex-col md:flex-row my-20 ">
+            <figure className="md:w-1/2 w-full ">
               <img className="h-full tour-img" src=".//activity.jpg" alt="#" />
             </figure>
-            <div className="px-40 py-32 w-1/2 border-tour">
+            <div className="md:px-40 md:py-32 p-10 md:w-1/2 w-full  border-tour">
               <h3 className="text-4xl font-semibold my-4">Adventure Tours</h3>
               <ul className="w-full ml-4">
                 <li className="list-disc mt-2  text-xl ">

@@ -2,13 +2,13 @@ import React from "react";
 import { Header } from "./Header";
 
 export const Tours = () => {
-
-        const sendMessage = () => {
-          const phoneNumber = '8219129088'; 
-          const message = encodeURIComponent('Hello, I need more information about this tour.'); // Customize your message
-          window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
-        
-        }
+  const sendMessage = () => {
+    const phoneNumber = "8219129088";
+    const message = encodeURIComponent(
+      "Hello, I need more information about this tour."
+    ); // Customize your message
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
+  };
   return (
     <>
       <Header />
@@ -24,11 +24,11 @@ export const Tours = () => {
           Hot Tours
         </h3>
         <div>
-          <div className="flex my-20 border-tour ">
-            <figure className="w-1/2">
+          <div className="flex flex-col md:flex-row my-20 border-tour ">
+            <figure className="md:w-1/2 w-full">
               <img className="h-full tour-img" src=".//domestic.webp" alt="#" />
             </figure>
-            <div className="px-40 py-32 w-1/2 ">
+            <div className="md:px-40 md:py-32 p-10 md:w-1/2 w-full ">
               <h3 className="text-4xl font-semibold my-4">Domestic Tours</h3>
               <ul className="w-full ml-4">
                 <li className="list-disc mt-2  text-xl ">
@@ -47,16 +47,19 @@ export const Tours = () => {
                   ⁠North East India Tour (Darjeeling-Gangtok-Kalimpong)
                 </li>
               </ul>
-              <button onClick={sendMessage}  className="more-info text-2xl font-semibold px-6 py-4 mt-8 ">
+              <button
+                onClick={sendMessage}
+                className="more-info text-2xl font-semibold px-6 py-4 mt-8 "
+              >
                 More Info
               </button>
             </div>
           </div>
-          <div className="flex my-20 ">
-            <figure className="w-1/2">
+          <div className="flex flex-col md:flex-row my-20 ">
+            <figure className="md:w-1/2 w-full">
               <img className="h-full tour-img" src=".//activity.jpg" alt="#" />
             </figure>
-            <div className="px-40 py-32 w-1/2 border-tour">
+            <div className="md:px-40 md:py-32 p-10 md:w-1/2 w-full border-tour">
               <h3 className="text-4xl font-semibold my-4">Adventure Tours</h3>
               <ul className="w-full ml-4">
                 <li className="list-disc mt-2  text-xl ">
@@ -73,16 +76,23 @@ export const Tours = () => {
                   Hot Air Balloon in Manali
                 </li>
               </ul>
-              <button onClick={sendMessage}  className="more-info text-2xl font-semibold px-6 py-4 mt-8 ">
+              <button
+                onClick={sendMessage}
+                className="more-info text-2xl font-semibold px-6 py-4 mt-8 "
+              >
                 More Info
               </button>
             </div>
           </div>
-          <div className="flex my-20 ">
-            <figure className="w-1/2">
-              <img className="h-full tour-img" src=".//pilgrimage.jpg" alt="#" />
+          <div className="flex flex-col md:flex-row my-20 ">
+            <figure className="md:w-1/2 w-full ">
+              <img
+                className="h-full tour-img"
+                src=".//pilgrimage.jpg"
+                alt="#"
+              />
             </figure>
-            <div className="px-40 py-32 w-1/2 border-tour">
+            <div className="md:px-40 md:py-32 p-10 md:w-1/2 w-full  border-tour">
               <h3 className="text-4xl font-semibold my-4">Pilgrimage Tours</h3>
               <ul className="w-full ml-4">
                 <li className="list-disc mt-2  text-xl ">
@@ -97,16 +107,19 @@ export const Tours = () => {
                   ⁠ ⁠Golden Temple Tour (Amritsar)
                 </li>
               </ul>
-              <button onClick={sendMessage}  className="more-info text-2xl font-semibold px-6 py-4 mt-8 ">
+              <button
+                onClick={sendMessage}
+                className="more-info text-2xl font-semibold px-6 py-4 mt-8 "
+              >
                 More Info
               </button>
             </div>
           </div>
-          <div className="flex my-20 ">
-            <figure className="w-1/2">
+          <div className="flex flex-col md:flex-row my-20 ">
+            <figure className="md:w-1/2 w-full ">
               <img className="h-full tour-img" src=".//luxry.jpeg" alt="#" />
             </figure>
-            <div className="px-40 py-32 w-1/2 border-tour">
+            <div className="md:px-40 md:py-32 p-10 md:w-1/2 w-full border-tour">
               <h3 className="text-4xl font-semibold my-4">Luxury Tours</h3>
               <ul className="w-full ml-4">
                 <li className="list-disc mt-2  text-xl ">
@@ -123,7 +136,10 @@ export const Tours = () => {
                   ⁠Luxury Jammu & Kashmir Tour
                 </li>
               </ul>
-              <button onClick={sendMessage}  className="more-info text-2xl font-semibold px-6 py-4 mt-8 ">
+              <button
+                onClick={sendMessage}
+                className="more-info text-2xl font-semibold px-6 py-4 mt-8 "
+              >
                 More Info
               </button>
             </div>

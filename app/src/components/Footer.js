@@ -1,12 +1,19 @@
 import React from "react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faYoutube,
+  faFacebookF,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 export const Footer = () => {
   const address = {
     name: "S K Sharma Tour & Travels",
     address: "VPO Sarah , Dharamshala",
     state: "Himachal Pradesh",
     pincode: "176215",
-    number: "9459588163",
+    number: "+91-9459588163",
+    number1: "+91-8219129088",
+    gmail:"sharmatourandtravel786@gmail.com"
   };
 
   const mapUrl =
@@ -18,21 +25,47 @@ export const Footer = () => {
         <div className="container mx-auto grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {/* Logo */}
           <div className="flex-shrink-0 mb-6 md:mb-0">
-            <img src=".//logo.png" alt="Company Logo" className="w-1/2" />
+            <img
+              src=".//logo.png"
+              alt="Company Logo"
+              className="lg:w-1/2 md:w-1/2 w-full "
+            />
+            <div className="flex lg:ml-8 mt-8 ml-2 md:ml-6">
+              <a href="https://www.instagram.com/sk_sharma_tours?igsh=MTNybnlzeGR6dzlqZQ%3D%3D&utm_source=qr" target="_blank"><FontAwesomeIcon
+                className="text-6xl  mx-4 font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 rounded-lg bg-clip-border"
+                icon={faInstagram}
+              /></a>
+              <a href="https://www.facebook.com/profile.php?id=61563539683762" target="_blank"><FontAwesomeIcon
+                className="bg-blue-600 text-white font-bold text-3xl p-4 mx-8 rounded-lg"
+                icon={faFacebookF}
+              /></a>
+              <a href="https://youtube.com/@sumitsharma4405?si=W-pJ_fjNv9NqfH_X" target="_blank"><FontAwesomeIcon
+                className="bg-red-500 text-3xl py-4 px-2 mx-4 rounded-lg"
+                icon={faYoutube}
+              /></a>
+              
+              
+            </div>
           </div>
 
           {/* Contact Details */}
           <div className="flex flex-col mb-6 md:mb-0">
             <h2 className="text-3xl font-bold mb-8">Contact Us</h2>
+            <p className="mb-4 text-3xl font-bold">Address :-</p>
             <p className="mb-1 text-2xl font-semibold">{address.name}</p>
             <p className="mb-1 text-2xl font-semibold">{address.address}</p>
             <p className="mb-1 text-2xl font-semibold">{address.state}</p>
             <p className="mb-1 text-2xl font-semibold">
               Pincode: {address.pincode}
             </p>
+            <p className="my-4 text-3xl font-bold">Contact :-</p>
             <p className="mb-1 text-2xl font-semibold">
-              Contact : {address.number}
+              {address.number}, {address.number1}
             </p>
+            <p className="my-4 text-3xl font-bold">Need Support :-</p>
+            <a className="mb-1 text-2xl font-semibold" href="mailto:sharmatourandtravel786@gmail.com">
+              {address.gmail}
+            </a>
           </div>
 
           {/* Map */}
