@@ -1,0 +1,202 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --bg-color: #fdfdfd;
+  --text-color: #333;
+  --main-color: #358fde;
+  --white-color: #fdfdfd;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+*::selection {
+  background: var(--main-color);
+  color: var(--bg-color);
+}
+
+.dark-mode {
+  --bg-color: #0b061f;
+  --text-color: #fdfdfd;
+  --shadow-color: rgba(0, 0, 0, 0.7);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 6%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  transition: 0.5s;
+}
+
+.header.sticky {
+  background: var(--bg-color);
+  box-shadow: 0 0.1rem 1rem var(--shadow-color);
+}
+
+.logo {
+  font-weight: 600;
+  margin-right: auto;
+  object-fit: cover;
+}
+
+.header.sticky .navbar a {
+  color: var(--text-color);
+}
+
+.header.sticky .navbar a.active {
+  color: var(--main-color);
+}
+
+.navbar a.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 0.2rem;
+  background: var(--white-color);
+}
+
+.header.sticky .navbar a::before {
+  background: var(--main-color);
+  opacity: 0.7;
+}
+
+#darkMode-icon {
+  font-size: 2.4rem;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.header.sticky #darkMode-icon {
+  color: var(--text-color);
+  opacity: 0.9;
+}
+
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--text-color);
+  display: none;
+}
+.outline1 {
+  font-family: "Londrina Outline", sans-serif;
+}
+.border-green {
+  border-bottom: 2px solid #16a34a;
+}
+.border-gray {
+  border-bottom: 2px solid #6b7280;
+}
+.service-border {
+  border: 8px solid gainsboro;
+}
+
+.width-30 {
+  width: 70%;
+}
+.service-border:hover {
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* tour */
+.border-tour {
+  border: 1px solid rgb(184, 181, 181);
+}
+.more-info {
+  border: 2px solid #eab30a;
+}
+.more-info:hover {
+  background-color: #056f98;
+  color: #eab30a;
+  border: 2px solid #eab30a;
+}
+.tour-img:hover {
+  transform: scale(0.95);
+  overflow: hidden;
+  object-fit: cover;
+}
+
+/* review  */
+.review-border {
+  border: 2px solid rgb(184, 181, 181);
+}
+
+/* abot section  */
+.about-bg {
+  background-image: url("../public/all-cars.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background: var(--bg-color);
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
+  box-shadow: 0 0.1rem 0.5rem var(--shadow-color);
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form .btn {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
