@@ -566,7 +566,7 @@ export const Hero = () => {
           </div>
           <div className="image-container w-1/2">
             <img
-              src="/attractions/bir-billing.jpg"
+              src="/attractions/Bir-Billing.jpg"
               alt="Description"
               className="image w-full"
             />
