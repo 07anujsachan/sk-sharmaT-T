@@ -22,7 +22,7 @@ export const Hero = () => {
   // prices
   const taxis = [
     {
-      image: ".//cars/alto.webp",
+      image: "/cars/alto.webp",
       name: "Alto",
       features: [
         "4 + 1 seater",
@@ -33,7 +33,7 @@ export const Hero = () => {
       ],
     },
     {
-      image: ".//cars/dzire.jpg",
+      image: "/cars/dzire.jpg",
       name: "Swift Desire",
       features: [
         "4 + 1 seater",
@@ -44,7 +44,7 @@ export const Hero = () => {
       ],
     },
     {
-      image: ".//cars/etios.webp",
+      image: "/cars/etios.webp",
       name: "Etios",
       features: [
         "4 + 1 seater",
@@ -72,12 +72,12 @@ export const Hero = () => {
   };
   // Array of background images
   const images = [
-    ".//bridge.jpeg",
-    ".//mountain.jpeg",
-    ".//hpcas.jpg",
-    ".//triund.jpg",
-    ".//trek.jpeg",
-    ".//snow.jpeg",
+    "/bridge.jpeg",
+    "/mountain.jpeg",
+    "/hpcas.jpg",
+    "/triund.jpg",
+    "/trek.jpeg",
+    "/snow.jpeg",
     // Add more images as needed
   ];
 
@@ -125,8 +125,10 @@ export const Hero = () => {
 
   return (
     <>
+      
       <div style={backgroundStyle}>
         <Header />
+
         <div style={overlayStyle}>
           <h2 className="text-white">Let's Travel the INDIA with us</h2>
           <h1 className="md:text-9xl text-6xl w-2/4 text-center mt-9 mb-20 font-bold">
@@ -201,7 +203,7 @@ export const Hero = () => {
       <div className=" py-40 w-full">
         <div className="flex lg:flex-row flex-col justify-between px-20 md:px-40 lg:px-80">
           <figure className="basis-[45%] mb-12 lg:md-1">
-            <img className="w-full rounded-2xl " src=".//hpcas.jpg" alt="" />
+            <img className="w-full rounded-2xl " src="/hpcas.jpg" alt="" />
           </figure>
           <div className="basis-1/2 ">
             <h2 className="md:text-5xl text-3xl font-semibold  mb-10">
@@ -242,7 +244,7 @@ export const Hero = () => {
             <div className="">
               {activeButton === 1 && (
                 <p className="py-4 text-2xl">
-                  Established in 2000 in the picturesque town of Dharamshala,
+                  Established in 2017 in the picturesque town of Dharamshala,
                   Himachal Pradesh, we have been curating unforgettable travel
                   experiences for over two decades. Our passion for travel and
                   commitment to excellence has led us to create tailored tours
@@ -389,7 +391,7 @@ export const Hero = () => {
         <div>
           <div className="flex flex-col md:flex-row my-20  ">
             <figure className="md:w-1/2 w-full ">
-              <img className="h-full tour-img" src=".//domestic.webp" alt="#" />
+              <img className="h-full tour-img" src="/domestic.webp" alt="#" />
             </figure>
             <div className="md:px-40 md:py-32 p-10 md:w-1/2 w-full border-tour ">
               <h3 className="text-4xl font-semibold my-4">Domestic Tours</h3>
@@ -422,7 +424,7 @@ export const Hero = () => {
           </div>
           <div className="flex flex-col md:flex-row my-20 ">
             <figure className="md:w-1/2 w-full ">
-              <img className="h-full tour-img" src=".//activity.jpg" alt="#" />
+              <img className="h-full tour-img" src="/activity.jpg" alt="#" />
             </figure>
             <div className="md:px-40 md:py-32 p-10 md:w-1/2 w-full  border-tour">
               <h3 className="text-4xl font-semibold my-4">Adventure Tours</h3>
@@ -524,7 +526,7 @@ export const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-8  overflow-scroll">
           <div className="image-container w-1/2">
             <img
-              src=".//attractions/shimla.jpg"
+              src="/attractions/shimla.jpg"
               alt="Description"
               className="image w-full"
             />
@@ -534,7 +536,7 @@ export const Hero = () => {
           </div>
           <div className="image-container w-1/2">
             <img
-              src=".//attractions/hidimba.jpg"
+              src="/attractions/hidimba.jpg"
               alt="Description"
               className="image w-full"
             />
@@ -544,7 +546,7 @@ export const Hero = () => {
           </div>
           <div className="image-container w-1/2">
             <img
-              src=".//attractions/khajjiyar.jpg"
+              src="/attractions/khajjiyar.jpg"
               alt="Description"
               className="image w-full"
             />
@@ -554,7 +556,7 @@ export const Hero = () => {
           </div>
           <div className="image-container w-1/2">
             <img
-              src=".//attractions/golden-tmp.webp"
+              src="/attractions/golden-tmp.webp"
               alt="Description"
               className="image w-full"
             />
@@ -564,7 +566,7 @@ export const Hero = () => {
           </div>
           <div className="image-container w-1/2">
             <img
-              src=".//attractions/bir-billing.jpg"
+              src="/attractions/bir-billing.jpg"
               alt="Description"
               className="image w-full"
             />
@@ -574,7 +576,7 @@ export const Hero = () => {
           </div>
           <div className="image-container w-1/2">
             <img
-              src=".//attractions/teagarden.avif"
+              src="/attractions/teagarden.avif"
               alt="Description"
               className="image w-full"
             />

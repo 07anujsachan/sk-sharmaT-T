@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import { Header } from "./Header";
 
 export const About = () => {
@@ -15,7 +14,7 @@ export const About = () => {
       <div className="mx-auto max-w-[900px] my-20 p-8">
         <div className="flex justify-center items-center flex-col">
           <p className="text-2xl my-4">
-            "Welcome to SK Sharma Tour & Travel Agency, your trusted partner for
+            "Welcome to SK Sharma Tour Agency, your trusted partner for
             exploring the beauty of India. Established in 2017 in the
             picturesque town of Dharamshala, Himachal Pradesh, we have been
             curating unforgettable travel experiences for over two decades.
@@ -48,22 +47,46 @@ export const About = () => {
         </h3>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 p-8">
           <figure className="">
-            <img className="w-full" src=".//vars.jpeg" alt="" />
+            <img
+              className="w-full h-[40rem] object-cover"
+              src="/attractions/abou1.jpeg"
+              alt=""
+            />
           </figure>
           <figure className="">
-            <img className="w-full" src=".//vars.jpeg" alt="" />
+            <img
+              className="w-full h-[40rem] object-cover"
+              src="/attractions/about2.jpeg"
+              alt=""
+            />
           </figure>
           <figure className="">
-            <img className="w-full" src=".//vars.jpeg" alt="" />
+            <img
+              className="w-full h-[40rem] object-cover"
+              src="/attractions/about4.jpg"
+              alt=""
+            />
           </figure>
           <figure className="">
-            <img className="w-full" src=".//vars.jpeg" alt="" />
+            <img
+              className="w-full h-[40rem] object-cover"
+              src="/attractions/about7.jpg"
+              alt=""
+            />
           </figure>
           <figure className="">
-            <img className="w-full" src=".//vars.jpeg" alt="" />
+            <img
+              className="w-full h-[40rem] object-cover"
+              src="/attractions/about5.jpg"
+              alt=""
+            />
           </figure>
           <figure className="">
-            <img className="w-full" src=".//vars.jpeg" alt="" />
+            <img
+              className="w-full h-[40rem] object-cover"
+              src="/attractions/about6.jpg"
+              alt=""
+            />
           </figure>
         </div>
       </div>

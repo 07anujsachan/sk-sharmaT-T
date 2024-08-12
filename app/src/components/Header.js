@@ -35,12 +35,12 @@ export const Header = () => {
       >
         <img
           className="logo md:w-[150px] w-[100px] z-20"
-          src=".//logo.png"
+          src="/logo.png"
           alt="Logo"
         />
 
         <nav
-          className={`navbar flex flex-col md:flex-row items-center absolute md:static top-[2px] left-0 h-screen w-full md:w-auto bg-[#124E66] md:bg-transparent pt-6  md:pt-0 transition-all duration-500 ease-in-out ${
+          className={`navbar flex flex-col md:flex-row items-center absolute md:static top-[2px] left-0 h-screen md:h-auto  w-full md:w-auto bg-[#124E66] md:bg-transparent pt-6  md:pt-0 transition-all duration-500 ease-in-out ${
             isOpen ? "block" : "hidden"
           } md:flex`}
         >

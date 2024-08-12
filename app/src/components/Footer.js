@@ -26,7 +26,7 @@ export const Footer = () => {
           {/* Logo */}
           <div className="flex-shrink-0 mb-6 md:mb-0">
             <img
-              src=".//logo.png"
+              src="/logo.png"
               alt="Company Logo"
               className="lg:w-1/2 md:w-1/2 w-full "
             />

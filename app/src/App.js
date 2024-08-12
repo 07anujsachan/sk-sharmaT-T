@@ -8,10 +8,12 @@ import { Footer } from "./components/Footer";
 import { FloatingActionButton } from "./components/Floating";
 import { Price } from "./components/Taxi_fare";
 import { Contact } from "./components/Contact";
+// import { Details } from "./components/ContactDeatails";
 
 function App() {
   return (
     <div className="App">
+      {/* <Details /> */}
       <BrowserRouter>
       <ScrollToTop />
         <Routes>

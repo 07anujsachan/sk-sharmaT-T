@@ -12,7 +12,7 @@ const reviews = [
     text: "I had an incredible experience with this car travel service! The booking process was seamless, and the vehicle was in pristine condition. The driver was punctual, professional, and made the journey extremely comfortable. Highly recommend for anyone looking for a hassle-free travel experience!",
 
     star: "⭐️ ⭐️ ⭐️ ⭐️ ⭐️",
-    name: "Rahul Sharma",
+    name: "Anuj Sachan",
   },
   {
     id: 2,
@@ -60,22 +60,23 @@ const reviews = [
     id: 9,
     text: "Outstanding service! The car was in excellent condition, and the driver was very attentive to our needs. The trip was smooth, and we arrived at our destination on time. This car travel service is now my go-to for all my travel needs.",
     star: "⭐️ ⭐️ ⭐️ ⭐️ ⭐️",
-    name: "Anuj Sachan",
+    name: "Rahul Sharma",
   },
 ];
 
 export const Reviews = () => {
   const isMobile = window.innerWidth <= 640;
   const [currentIndex, setCurrentIndex] = useState(0);
+  const reviewsToShow = isMobile ? 1 : 3;
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
-      Math.min(prevIndex + isMobile ? 1 : 3, reviews.length - isMobile ? 1 : 3)
+      Math.min(prevIndex + reviewsToShow, reviews.length - reviewsToShow)
     );
   };
 
   const handlePrevious = () => {
-    setCurrentIndex((prevIndex) => Math.max(prevIndex - isMobile ? 1 : 3, 0));
+    setCurrentIndex((prevIndex) => Math.max(prevIndex - reviewsToShow, 0));
   };
 
   return (
@@ -91,7 +92,7 @@ export const Reviews = () => {
             <FontAwesomeIcon className="text-3xl" icon={faChevronLeft} />
           </button>
           {reviews
-            .slice(currentIndex, currentIndex + isMobile ? 1 : 3)
+            .slice(currentIndex, currentIndex + reviewsToShow)
             .map((review) => (
               <div
                 key={review.id}
@@ -107,7 +108,7 @@ export const Reviews = () => {
             ))}
           <button
             onClick={handleNext}
-            disabled={currentIndex + isMobile ? 1 : 3 >= reviews.length}
+            disabled={currentIndex + reviewsToShow >= reviews.length}
           >
             <FontAwesomeIcon className="text-3xl" icon={faChevronRight} />
           </button>

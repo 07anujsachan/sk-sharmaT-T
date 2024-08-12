@@ -2,15 +2,16 @@ import React from "react";
 import { Header } from "./Header";
 
 export const Price = () => {
-    const sendMessage = () => {
-        const phoneNumber = '8219129088'; 
-        const message = encodeURIComponent(`Hello, I need more information about your car prices.`); // Customize your message
-        window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
-      
-      }
+  const sendMessage = () => {
+    const phoneNumber = "8219129088";
+    const message = encodeURIComponent(
+      `Hello, I need more information about your car prices.`
+    ); // Customize your message
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
+  };
   const taxis = [
     {
-      image: ".//cars/alto.webp",
+      image: "/cars/alto.webp",
       name: "Alto",
       features: [
         "4 + 1 seater",
@@ -21,7 +22,7 @@ export const Price = () => {
       ],
     },
     {
-      image: ".//cars/dzire.jpg",
+      image: "/cars/dzire.jpg",
       name: "Swift Desire",
       features: [
         "4 + 1 seater",
@@ -32,7 +33,7 @@ export const Price = () => {
       ],
     },
     {
-      image: ".//cars/etios.webp",
+      image: "/cars/etios.webp",
       name: "Etios",
       features: [
         "4 + 1 seater",
@@ -43,7 +44,7 @@ export const Price = () => {
       ],
     },
     {
-      image: ".//cars/innova.avif",
+      image: "/cars/innova.avif",
       name: "Innova Crysta",
       features: [
         "7 seater",
@@ -54,7 +55,7 @@ export const Price = () => {
       ],
     },
     {
-      image: ".//cars/ertiga.jpeg",
+      image: "/cars/ertiga.jpeg",
       name: "Ertiga",
       features: [
         "7 seater",
@@ -90,7 +91,10 @@ export const Price = () => {
                     <li className="list-disc mb-2">{f}</li>
                   ))}
                 </ul>
-                <button onClick={sendMessage} className="py-4 text-lg mt-6 px-8 bg-[#124e66] text-white rounded-xl font-semibold">
+                <button
+                  onClick={sendMessage}
+                  className="py-4 text-lg mt-6 px-8 bg-[#124e66] text-white rounded-xl font-semibold"
+                >
                   Get Prices
                 </button>
               </div>
