@@ -84,7 +84,7 @@ export const Attractions = () => {
     },
     {
       name: "Bir Billing",
-      image: "/attractions/bir-billing.jpg",
+      image: "/attractions/Bir-Billing.jpg",
       description:
         "Bir is a rural village located in the west of Joginder Nagar Valley in the state of Himachal Pradesh in northern India. It's the paragliding capital of India[1][2] and the location of the Bir Tibetan Colony, founded in the early 1960s as a settlement for Tibetan refugees after the 1959 Tibetan uprising.Bir Billing provides the option of Paragliding, Trekking, Mountain Biking, Angling and Camping. Billing is situated north of Bir at the distance of 14 km and gateway to the Thamsar Pass trek (4750 mts).",
     },
