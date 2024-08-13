@@ -27,7 +27,7 @@ export const Contact = () => {
         <form
           action="https://formspree.io/f/mkndrqdg"
           method="POST"
-          className="md:w-1/2 w-full"
+          className="md:w-1/2 w-full flex justify-center items-center flex-col"
         >
           <div className="input-box">
             <input type="text" name="name" placeholder="Full Name" />

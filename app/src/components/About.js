@@ -8,7 +8,7 @@ export const About = () => {
       <div className="about-bg lg:h-[400px] md:h-[300px] h-96  flex justify-center items-center ">
         <h3 className=" lg:text-6xl md:text-4xl text-3xl text-white ">
           {" "}
-          About S K Sharma Tour & Travels
+          About S K Sharma Tours
         </h3>
       </div>
       <div className="mx-auto max-w-[900px] my-20 p-8">

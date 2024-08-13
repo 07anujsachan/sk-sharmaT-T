@@ -125,7 +125,6 @@ export const Hero = () => {
 
   return (
     <>
-      
       <div style={backgroundStyle}>
         <Header />
 
@@ -585,6 +584,39 @@ export const Hero = () => {
             </div>
           </div>
         </div>
+      </section>
+      {/* contact form */}
+      <section className="px-10  md:px-40 lg:px-80 py-16 contact">
+        <h1 className="text-5xl text-[#124e66] my-12 font-semibold text-center">
+          Get In Touch
+        </h1>
+        <form
+          action="https://formspree.io/f/mkndrqdg"
+          method="POST"
+          className="md:w-1/2 w-full"
+        >
+          <div className="input-box">
+            <input type="text" name="name" placeholder="Full Name" />
+            <input type="email" name="email" placeholder="Email Address" />
+          </div>
+          <div className="input-box">
+            <input type="number" name="number" placeholder="Mobile Number" />
+            <input type="text" name="subject" placeholder="Email Subject" />
+          </div>
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+          ></textarea>
+          <button
+            type="submit"
+            className="bg-white p-4 w-full text-3xl hover:bg-[#124E66] hover:text-yellow-500 rounded-xl  msg-btn"
+          >
+            Send Message
+          </button>
+        </form>
       </section>
     </>
   );

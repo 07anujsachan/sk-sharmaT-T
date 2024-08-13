@@ -7,13 +7,13 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 export const Footer = () => {
   const address = {
-    name: "S K Sharma Tour & Travels",
+    name: "S K Sharma Tours",
     address: "VPO Sarah , Dharamshala",
     state: "Himachal Pradesh",
     pincode: "176215",
     number: "+91-9459588163",
     number1: "+91-8219129088",
-    gmail:"sharmatourandtravel786@gmail.com"
+    gmail: "sharmatourandtravel786@gmail.com",
   };
 
   const mapUrl =
@@ -21,30 +21,43 @@ export const Footer = () => {
 
   return (
     <>
-      <footer className="bg-gray-800 text-white py-40 px-32">
+      <footer className="bg-gray-800 text-white md:px-32 lg:px-32 py-40 px-12">
         <div className="container mx-auto grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {/* Logo */}
           <div className="flex-shrink-0 mb-6 md:mb-0">
             <img
-              src="/logo.png"
+              src="/finallogo.png"
               alt="Company Logo"
-              className="lg:w-1/2 md:w-1/2 w-full "
+              className="lg:w-1/2 md:w-1/2 w-3/5 "
             />
             <div className="flex lg:ml-8 mt-8 ml-2 md:ml-6">
-              <a href="https://www.instagram.com/sk_sharma_tours?igsh=MTNybnlzeGR6dzlqZQ%3D%3D&utm_source=qr" target="_blank"><FontAwesomeIcon
-                className="text-6xl  mx-4 font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 rounded-lg bg-clip-border"
-                icon={faInstagram}
-              /></a>
-              <a href="https://www.facebook.com/profile.php?id=61563539683762" target="_blank"><FontAwesomeIcon
-                className="bg-blue-600 text-white font-bold text-3xl p-4 mx-8 rounded-lg"
-                icon={faFacebookF}
-              /></a>
-              <a href="https://youtube.com/@sumitsharma4405?si=W-pJ_fjNv9NqfH_X" target="_blank"><FontAwesomeIcon
-                className="bg-red-500 text-3xl py-4 px-2 mx-4 rounded-lg"
-                icon={faYoutube}
-              /></a>
-              
-              
+              <a
+                href="https://www.instagram.com/sk_sharma_tours?igsh=MTNybnlzeGR6dzlqZQ%3D%3D&utm_source=qr"
+                target="_blank"
+              >
+                <FontAwesomeIcon
+                  className="text-6xl  mx-4 font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 rounded-lg bg-clip-border"
+                  icon={faInstagram}
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61563539683762"
+                target="_blank"
+              >
+                <FontAwesomeIcon
+                  className="bg-blue-600 text-white font-bold text-3xl p-4 mx-8 rounded-lg"
+                  icon={faFacebookF}
+                />
+              </a>
+              <a
+                href="https://youtube.com/@sumitsharma4405?si=W-pJ_fjNv9NqfH_X"
+                target="_blank"
+              >
+                <FontAwesomeIcon
+                  className="bg-red-500 text-3xl py-4 px-2 mx-4 rounded-lg"
+                  icon={faYoutube}
+                />
+              </a>
             </div>
           </div>
 
@@ -63,7 +76,10 @@ export const Footer = () => {
               {address.number}, {address.number1}
             </p>
             <p className="my-4 text-3xl font-bold">Need Support :-</p>
-            <a className="mb-1 text-2xl font-semibold" href="mailto:sharmatourandtravel786@gmail.com">
+            <a
+              className="mb-1 text-2xl font-semibold"
+              href="mailto:sharmatourandtravel786@gmail.com"
+            >
               {address.gmail}
             </a>
           </div>
@@ -82,9 +98,9 @@ export const Footer = () => {
           </div>
         </div>
       </footer>
-      <div className="p-24 bg-black">
-        <p className="text-3xl text-gray-300">
-          &copy: S K Sharma Tour & Travels All Right Reserved @2024
+      <div className="md:p-24 lg:p-24 px-8 py-12 bg-black">
+        <p className="md:text-3xl lg:text-3xl text-xl text-gray-300">
+          &copy; S K Sharma Tours All Right Reserved @2024
         </p>
       </div>
     </>

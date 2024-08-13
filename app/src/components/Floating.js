@@ -10,7 +10,7 @@ export const FloatingActionButton = () => {
   const handleToggle = () => setIsOpen(!isOpen);
 
   const handleCall = () => {
-    window.location.href = "tel:9459588163";
+    window.location.href = "tel:8219129088";
   };
 
   const handleWhatsapp = () => {

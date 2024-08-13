@@ -35,7 +35,7 @@ export const Header = () => {
       >
         <img
           className="logo md:w-[150px] w-[100px] z-20"
-          src="/logo.png"
+          src="/finallogo.png"
           alt="Logo"
         />
 
