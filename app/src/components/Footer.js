@@ -36,7 +36,7 @@ export const Footer = () => {
                 target="_blank"
               >
                 <FontAwesomeIcon
-                  className="text-6xl  mx-4 font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 rounded-lg bg-clip-border"
+                  className="text-6xl  mx-4 font-bold bg-gradient-to-l from-pink-500 via-purple-500 to-yellow-500 rounded-lg bg-clip-border"
                   icon={faInstagram}
                 />
               </a>
@@ -100,7 +100,7 @@ export const Footer = () => {
       </footer>
       <div className="md:p-24 lg:p-24 px-8 py-12 bg-black">
         <p className="md:text-3xl lg:text-3xl text-xl text-gray-300">
-          &copy; S K Sharma Tours All Right Reserved @2024
+         Copyright &copy; S K Sharma Tours All Right Reserved @2024
         </p>
       </div>
     </>

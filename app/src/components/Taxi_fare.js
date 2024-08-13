@@ -23,7 +23,7 @@ export const Price = () => {
     },
     {
       image: "/cars/dzire.jpg",
-      name: "Swift Desire",
+      name: "Swift Dzire",
       features: [
         "4 + 1 seater",
         "Individual rides",
@@ -70,7 +70,7 @@ export const Price = () => {
     <div>
       <Header />
       <div className="about-bg lg:h-[400px] md:h-[300px] h-96  flex justify-center items-center ">
-        <h3 className=" lg:text-6xl md:text-4xl text-3xl text-white ">
+        <h3 className=" lg:text-6xl md:text-4xl text-3xl text-white font-semibold ">
           {" "}
           Our Prices
         </h3>

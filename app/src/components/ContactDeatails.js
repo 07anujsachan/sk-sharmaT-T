@@ -24,7 +24,7 @@ export const Details = () => {
                 className="text-6xl  mx-4 font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 rounded-lg bg-clip-border"
                 icon={faInstagram}
               /></a>
-              <a href="https://www.facebook.com/profile.php?id=61563539683762" target="_blank"><FontAwesomeIcon
+              <a href="https://www.facebook.com/profile.php?id=61563539683762" target="_blank" ><FontAwesomeIcon
                 className="bg-blue-600 text-white font-bold text-3xl p-4 mx-8 rounded-lg"
                 icon={faFacebookF}
               /></a>

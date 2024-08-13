@@ -8,14 +8,32 @@ import { Footer } from "./components/Footer";
 import { FloatingActionButton } from "./components/Floating";
 import { Price } from "./components/Taxi_fare";
 import { Contact } from "./components/Contact";
+import { useState, useEffect } from "react";
+import { Loader } from "./components/Loader";
 // import { Details } from "./components/ContactDeatails";
 
 function App() {
+  const [isLoading, setisLoading] = useState(false);
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate an async operation
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Adjust time as needed
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
   return (
     <div className="App">
       {/* <Details /> */}
       <BrowserRouter>
-      <ScrollToTop />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/about" element={<About />} />

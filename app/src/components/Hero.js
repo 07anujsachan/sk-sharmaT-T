@@ -463,10 +463,10 @@ export const Hero = () => {
             Our Prices
           </h1>
           <p className="text-2xl text-gray-600 ">
-            S K Sharma Tour is a popular travel agency based in Dharamshala,
+            S K Sharma Tours is a popular travel agency based in Dharamshala,
             Himachal Pradesh, India. The agency specializes in providing various
             travel services, including car rentals, tour packages, and taxi
-            services. Karma Tour and Travels is committed to providing
+            services.S K Sharma Tours is committed to providing
             high-quality and affordable travel services to their customers.
           </p>
           <Link to="/prices">
@@ -511,7 +511,7 @@ export const Hero = () => {
           </h1>
           <p className="text-2xl text-gray-600 ">
             Dharamshala is a popular tourist destination in Himachal Pradesh,
-            and S K Sharma Tour offers a range of services to help travelers
+            and S K Sharma Tours offers a range of services to help travelers
             explore the area. Some of the most popular destinations in
             Dharamshala include:
           </p>
@@ -593,17 +593,38 @@ export const Hero = () => {
         <form
           action="https://formspree.io/f/mkndrqdg"
           method="POST"
-          className="md:w-1/2 w-full"
+          className="md:w-1/2 w-full mx-auto my-0"
         >
-          <div className="input-box">
-            <input type="text" name="name" placeholder="Full Name" />
-            <input type="email" name="email" placeholder="Email Address" />
+          <div className="flex justify-between">
+            <input
+              className="w-full mr-2 px-[1.5rem] py-[1.5rem] text-[1.6rem] text-[var(--text-color)] bg-[var(--bg-color)] rounded-[0.8rem] my-[0.7rem] shadow-[0_0.1rem_0.5rem_var(--shadow-color)]"
+              type="text"
+              name="name"
+              placeholder="Full Name"
+            />
+            <input
+              className="w-full mr-2 px-[1.5rem] py-[1.5rem] text-[1.6rem] text-[var(--text-color)] bg-[var(--bg-color)] rounded-[0.8rem] my-[0.7rem] shadow-[0_0.1rem_0.5rem_var(--shadow-color)]"
+              type="email"
+              name="email"
+              placeholder="Email Address"
+            />
           </div>
-          <div className="input-box">
-            <input type="number" name="number" placeholder="Mobile Number" />
-            <input type="text" name="subject" placeholder="Email Subject" />
+          <div className="flex justify-between ">
+            <input
+              className="w-full mr-2 px-[1.5rem] py-[1.5rem] text-[1.6rem] text-[var(--text-color)] bg-[var(--bg-color)] rounded-[0.8rem] my-[0.7rem] shadow-[0_0.1rem_0.5rem_var(--shadow-color)]"
+              type="number"
+              name="number"
+              placeholder="Mobile Number"
+            />
+            <input
+              className="w-full mr-2 px-[1.5rem] py-[1.5rem] text-[1.6rem] text-[var(--text-color)] bg-[var(--bg-color)] rounded-[0.8rem] my-[0.7rem] shadow-[0_0.1rem_0.5rem_var(--shadow-color)]"
+              type="text"
+              name="subject"
+              placeholder="Email Subject"
+            />
           </div>
           <textarea
+            className="w-full mr-2 px-[1.5rem] py-[1.5rem] text-[1.6rem] text-[var(--text-color)] bg-[var(--bg-color)] rounded-[0.8rem] my-[0.7rem] shadow-[0_0.1rem_0.5rem_var(--shadow-color)]"
             name="message"
             id=""
             cols="30"

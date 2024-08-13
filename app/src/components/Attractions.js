@@ -147,7 +147,7 @@ export const Attractions = () => {
     <div>
       <Header />
       <div className="about-bg lg:h-[400px] md:h-[300px] h-96  flex justify-center items-center ">
-        <h3 className=" lg:text-6xl md:text-4xl text-3xl text-white ">
+        <h3 className=" lg:text-6xl md:text-4xl text-2xl font-semibold text-white ">
           {" "}
           Best Places To Visit In Himachal Pradesh
         </h3>
@@ -168,7 +168,7 @@ export const Attractions = () => {
             </figure>
             <div
               className={`py-24  w-full md:w-1/2 ${
-                index % 2 === 0 ? "pl-12" : "pr-12"
+                index % 2 === 0 ? "md:pl-12 lg:pl-12 " : "pr-12"
               }`}
             >
               <h3 className="text-5xl font-semibold text-[#124E66]">
@@ -804,7 +804,7 @@ export const Attractions = () => {
             />
           </figure>
         </div>
-      </div> */}
+      </div>  */}
     </div>
   );
 };
