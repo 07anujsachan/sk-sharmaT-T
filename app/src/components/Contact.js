@@ -25,7 +25,7 @@ export const Contact = () => {
         </div>
 
         <form
-          action="https://formspree.io/f/mkndrqdg"
+          action="https://formspree.io/f/xdknzqkd"
           method="POST"
           className="md:w-1/2 w-full flex justify-center  flex-col"
         >

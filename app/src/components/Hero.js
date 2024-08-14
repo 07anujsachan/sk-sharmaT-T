@@ -591,7 +591,7 @@ export const Hero = () => {
           Get In Touch
         </h1>
         <form
-          action="https://formspree.io/f/mkndrqdg"
+          action="https://formspree.io/f/xdknzqkd"
           method="POST"
           className="md:w-1/2 w-full mx-auto my-0"
         >
