@@ -1,5 +1,6 @@
 {
-  "name": "app",
+  "name": "sksharmatours",
+  "homepage": "http://sksharmatours.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

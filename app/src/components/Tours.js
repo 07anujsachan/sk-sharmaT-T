@@ -26,7 +26,7 @@ export const Tours = () => {
         <div>
           <div className="flex flex-col md:flex-row my-20 border-tour ">
             <figure className="md:w-1/2 w-full">
-              <img className="h-full tour-img" src="/domestic.webp" alt="#" />
+              <img className="md:h-full lg:h-full tour-img" src="/domestic.webp" alt="#" />
             </figure>
             <div className="md:px-40 md:py-32 p-10 md:w-1/2 w-full ">
               <h3 className="text-4xl font-semibold my-4">Domestic Tours</h3>

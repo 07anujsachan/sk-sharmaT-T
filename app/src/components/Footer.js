@@ -41,7 +41,7 @@ export const Footer = () => {
                 />
               </a>
               <a
-                href="https://www.facebook.com/profile.php?id=61563539683762"
+                href="https://www.facebook.com/profile.php?id=61564278007141&mibextid=LQQJ4d"
                 target="_blank"
               >
                 <FontAwesomeIcon
